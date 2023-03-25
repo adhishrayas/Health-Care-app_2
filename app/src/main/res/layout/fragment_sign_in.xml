@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.SignUpFragment">
+    tools:context=".signInFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -25,12 +25,11 @@
             android:textStyle="bold"
             android:fontFamily="@font/poppins_regular"/>
 
-
         <TextView
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Full Name"
+            android:text="Email"
             android:textSize="20sp"
             android:textColor="@color/grey"
             android:layout_marginTop="30dp"
@@ -40,7 +39,7 @@
             android:id="@+id/textView3"
             android:layout_width="match_parent"
             android:layout_height="35sp"
-            android:hint="Jan Kowalski"
+            android:hint="patient@self.com"
             android:padding="8dp"
             android:textSize="15sp"
             android:textColor="@color/grey"
@@ -51,17 +50,18 @@
             android:id="@+id/textView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Email"
+            android:text="Password"
             android:textSize="20sp"
             android:textColor="@color/grey"
             android:layout_marginTop="20dp"
             />
 
+
         <EditText
             android:id="@+id/textView5"
             android:layout_width="match_parent"
             android:layout_height="35sp"
-            android:hint="patient@self.com"
+            android:hint="max 8 char"
             android:textSize="15sp"
             android:padding="8dp"
             android:textColor="@color/grey"
@@ -69,42 +69,22 @@
             android:background="@drawable/signup_button"/>
 
         <TextView
-            android:id="@+id/textView6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Password"
-            android:textSize="20sp"
-            android:textColor="@color/grey"
+            android:text="Forgot your password?"
+            android:textSize="13sp"
+            android:textColor="@color/button"
             android:layout_marginTop="20dp"
+            android:layout_marginLeft="219dp"
             />
-
-        <EditText
-            android:id="@+id/textView7"
-            android:layout_width="match_parent"
-            android:layout_height="35sp"
-            android:hint="min 8 char"
-            android:textSize="15sp"
-            android:textColor="@color/grey"
-            android:padding="8dp"
-            android:layout_marginTop="8dp"
-            android:background="@drawable/signup_button"/>
-
-        <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="I agree with Terms and Privacy Policy"
-            android:textColor="@color/grey"
-            android:textSize="15sp"
-            android:layout_marginTop="8dp"/>
 
         <Button
             android:layout_width="180dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="70dp"
-            android:text="Sign Up"
+            android:text="Sign In"
             android:textSize="18sp"
-            android:layout_marginTop="60dp"
-            android:background="@drawable/button"
+            android:layout_marginTop="220dp"
             android:fontFamily="@font/gilroyextrabold"/>
 
         <LinearLayout
@@ -118,7 +98,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Already have an account?"
+                android:text="Don't have an account?"
                 android:textColor="@color/grey"
                 android:textSize="15sp" />
 
@@ -126,13 +106,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="18sp"
-                android:text="Sign In"
+                android:text="Sign Up"
                 android:textColor="@color/button"
                 android:textStyle="bold"
                 android:layout_marginLeft="10sp"/>
 
         </LinearLayout>
-
 
     </LinearLayout>
 

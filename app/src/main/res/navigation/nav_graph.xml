@@ -7,16 +7,52 @@
 
     <fragment
         android:id="@+id/signUpFragment"
-        android:name="com.example.healthcare.SignUpFragment"
+        android:name="com.example.healthcare.fragments.SignUpFragment"
         android:label="fragment_sign_up"
-        tools:layout="@layout/fragment_sign_up" />
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/action_signUpFragment_to_yourCodeFragment2"
+            app:destination="@id/yourCodeFragment" />
+    </fragment>
     <fragment
         android:id="@+id/welcomeFragment"
-        android:name="com.example.healthcare.WelcomeFragment"
+        android:name="com.example.healthcare.fragments.WelcomeFragment"
         android:label="fragment_welcome"
         tools:layout="@layout/fragment_welcome" >
         <action
             android:id="@+id/action_welcomeFragment_to_signUpFragment"
             app:destination="@id/signUpFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/yourCodeFragment"
+        android:name="com.example.healthcare.fragments.yourCodeFragment"
+        android:label="fragment_your_code"
+        tools:layout="@layout/fragment_your_code" >
+        <action
+            android:id="@+id/action_yourCodeFragment_to_infoFragment"
+            app:destination="@id/infoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="com.example.healthcare.infoFragment"
+        android:label="fragment_info"
+        tools:layout="@layout/fragment_info" >
+        <action
+            android:id="@+id/action_infoFragment_to_signInFragment"
+            app:destination="@id/signInFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="com.example.healthcare.signInFragment"
+        android:label="fragment_sign_in"
+        tools:layout="@layout/fragment_sign_in" >
+        <action
+            android:id="@+id/action_signInFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.healthcare.homeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
 </navigation>
