@@ -34,7 +34,7 @@
     </fragment>
     <fragment
         android:id="@+id/infoFragment"
-        android:name="com.example.healthcare.infoFragment"
+        android:name="com.example.healthcare.fragments.infoFragment"
         android:label="fragment_info"
         tools:layout="@layout/fragment_info" >
         <action
@@ -43,7 +43,7 @@
     </fragment>
     <fragment
         android:id="@+id/signInFragment"
-        android:name="com.example.healthcare.signInFragment"
+        android:name="com.example.healthcare.fragments.signInFragment"
         android:label="fragment_sign_in"
         tools:layout="@layout/fragment_sign_in" >
         <action
@@ -52,7 +52,7 @@
     </fragment>
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.example.healthcare.homeFragment"
+        android:name="com.example.healthcare.fragments.homeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" >
         <action
@@ -61,7 +61,7 @@
     </fragment>
     <fragment
         android:id="@+id/addFragment"
-        android:name="com.example.healthcare.addFragment"
+        android:name="com.example.healthcare.fragments.addFragment"
         android:label="fragment_add"
         tools:layout="@layout/fragment_add" >
         <action
@@ -70,17 +70,17 @@
     </fragment>
     <fragment
         android:id="@+id/thankYouFragment"
-        android:name="com.example.healthcare.thankYouFragment"
+        android:name="com.example.healthcare.fragments.thankYouFragment"
         android:label="fragment_thank_you"
         tools:layout="@layout/fragment_thank_you" />
     <fragment
         android:id="@+id/receiptFragment"
-        android:name="com.example.healthcare.receiptFragment"
+        android:name="com.example.healthcare.fragments.receiptFragment"
         android:label="fragment_receipt"
         tools:layout="@layout/fragment_receipt" />
     <fragment
         android:id="@+id/calenderFragment"
-        android:name="com.example.healthcare.calenderFragment"
+        android:name="com.example.healthcare.fragments.calenderFragment"
         android:label="fragment_calender"
         tools:layout="@layout/fragment_calender" />
 </navigation>
