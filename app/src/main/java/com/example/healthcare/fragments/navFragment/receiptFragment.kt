@@ -1,4 +1,4 @@
-package com.example.healthcare.fragments
+package com.example.healthcare.fragments.navFragment
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

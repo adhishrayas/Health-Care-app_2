@@ -34,7 +34,7 @@
     </fragment>
     <fragment
         android:id="@+id/infoFragment"
-        android:name="com.example.healthcare.fragments.infoFragment"
+        android:name="com.example.healthcare.fragments.navFragment.infoFragment"
         android:label="fragment_info"
         tools:layout="@layout/fragment_info" >
         <action
@@ -52,7 +52,7 @@
     </fragment>
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.example.healthcare.fragments.homeFragment"
+        android:name="com.example.healthcare.fragments.navFragment.homeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" >
         <action
@@ -61,7 +61,7 @@
     </fragment>
     <fragment
         android:id="@+id/addFragment"
-        android:name="com.example.healthcare.fragments.addFragment"
+        android:name="com.example.healthcare.fragments.navFragment.addFragment"
         android:label="fragment_add"
         tools:layout="@layout/fragment_add" >
         <action
@@ -75,12 +75,12 @@
         tools:layout="@layout/fragment_thank_you" />
     <fragment
         android:id="@+id/receiptFragment"
-        android:name="com.example.healthcare.fragments.receiptFragment"
+        android:name="com.example.healthcare.fragments.navFragment.receiptFragment"
         android:label="fragment_receipt"
         tools:layout="@layout/fragment_receipt" />
     <fragment
         android:id="@+id/calenderFragment"
-        android:name="com.example.healthcare.fragments.calenderFragment"
+        android:name="com.example.healthcare.fragments.navFragment.calenderFragment"
         android:label="fragment_calender"
         tools:layout="@layout/fragment_calender" />
 </navigation>
