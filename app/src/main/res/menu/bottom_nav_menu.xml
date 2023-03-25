@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home2"
+        android:title="Home" android:icon="@drawable/ic_home"
+        />
+    <item
+        android:id="@+id/receipt"
+        android:title="Receipt" android:icon="@drawable/ic_receipt"
+        />
+    <item
+        android:id="@+id/add2"
+        android:title="Add" android:icon="@drawable/ic_add"
+        />
+    <item
+        android:id="@+id/calender"
+        android:title="Calender" android:icon="@drawable/ic_calendar"
+        />
+    <item
+        android:id="@+id/profile"
+        android:title="Profile" android:icon="@drawable/ic_profile"
+        />
+</menu>

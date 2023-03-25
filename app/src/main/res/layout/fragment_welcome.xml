@@ -1,20 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragments.WelcomeFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:gravity="center"
+        android:orientation="vertical">
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button" />
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="650dp"
+            android:layout_height="600dp"
+            android:src="@drawable/bg"
+            app:shapeAppearanceOverlay="@style/circularImage"
 
-</FrameLayout>
+            />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView"
+            android:layout_marginTop="16dp"
+            android:gravity="center_horizontal"
+            android:textSize="22sp"
+            android:text="Manage your health and bright future"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            />
+
+        <Button
+            android:id="@+id/buttonGetStarted"
+            android:layout_width="150sp"
+            android:layout_height="wrap_content"
+            android:text="Get Started"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/button"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>
