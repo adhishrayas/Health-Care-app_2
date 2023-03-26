@@ -72,12 +72,20 @@
         android:id="@+id/thankYouFragment"
         android:name="com.example.healthcare.fragments.thankYouFragment"
         android:label="fragment_thank_you"
-        tools:layout="@layout/fragment_thank_you" />
+        tools:layout="@layout/fragment_thank_you" >
+        <action
+            android:id="@+id/action_thankYouFragment_to_receiptFragment"
+            app:destination="@id/receiptFragment" />
+    </fragment>
     <fragment
         android:id="@+id/receiptFragment"
         android:name="com.example.healthcare.fragments.navFragment.receiptFragment"
         android:label="fragment_receipt"
-        tools:layout="@layout/fragment_receipt" />
+        tools:layout="@layout/fragment_receipt" >
+        <action
+            android:id="@+id/action_receiptFragment_to_calenderFragment"
+            app:destination="@id/calenderFragment" />
+    </fragment>
     <fragment
         android:id="@+id/calenderFragment"
         android:name="com.example.healthcare.fragments.navFragment.calenderFragment"
