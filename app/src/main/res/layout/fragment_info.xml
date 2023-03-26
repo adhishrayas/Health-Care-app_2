@@ -14,7 +14,6 @@
         android:layout_marginRight="30dp">
 
         <TextView
-            android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="A little about yourself"
@@ -27,7 +26,6 @@
 
 
         <TextView
-            android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Let's get acquainted"
@@ -215,10 +213,12 @@
         </com.google.android.material.card.MaterialCardView>
 
         <Button
+            android:id="@+id/continueButton"
             android:layout_width="180dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="70dp"
-            android:text="Sign Up"
+            android:text="Continue"
+            android:textAllCaps="false"
             android:textSize="18sp"
             android:layout_marginTop="65dp"
             android:background="@drawable/button"

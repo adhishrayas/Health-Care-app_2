@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_signUpFragment_to_yourCodeFragment2"
             app:destination="@id/yourCodeFragment" />
+        <action
+            android:id="@+id/action_signUpFragment_to_signInFragment"
+            app:destination="@id/signInFragment" />
     </fragment>
     <fragment
         android:id="@+id/welcomeFragment"
@@ -38,8 +41,8 @@
         android:label="fragment_info"
         tools:layout="@layout/fragment_info" >
         <action
-            android:id="@+id/action_infoFragment_to_signInFragment"
-            app:destination="@id/signInFragment" />
+            android:id="@+id/action_infoFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
     </fragment>
     <fragment
         android:id="@+id/signInFragment"
@@ -47,8 +50,11 @@
         android:label="fragment_sign_in"
         tools:layout="@layout/fragment_sign_in" >
         <action
-            android:id="@+id/action_signInFragment_to_homeFragment"
-            app:destination="@id/homeFragment" />
+            android:id="@+id/action_signInFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/action_signInFragment_to_infoFragment"
+            app:destination="@id/infoFragment" />
     </fragment>
     <fragment
         android:id="@+id/homeFragment"
@@ -67,6 +73,9 @@
         <action
             android:id="@+id/action_addFragment_to_thankYouFragment"
             app:destination="@id/thankYouFragment" />
+        <action
+            android:id="@+id/action_addFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
     </fragment>
     <fragment
         android:id="@+id/thankYouFragment"

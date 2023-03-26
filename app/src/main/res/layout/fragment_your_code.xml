@@ -157,6 +157,7 @@
         </LinearLayout>
 
         <Button
+            android:id="@+id/verifyButton"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:background="@drawable/button"

@@ -16,8 +16,8 @@ class WelcomeFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
+    ): View?
+    {
         _binding = FragmentWelcomeBinding.inflate(layoutInflater,container,false)
 
         return binding.root
@@ -29,6 +29,8 @@ class WelcomeFragment : Fragment() {
 //        binding.button.setOnClickListener {
 //            findNavController().navigate(R.id.action_welcomeFragment_to_signUpFragment)
 //        }
+
+
     }
 
 }
