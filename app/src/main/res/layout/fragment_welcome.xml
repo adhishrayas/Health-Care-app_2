@@ -33,7 +33,7 @@
             android:textColor="@color/black"
             />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/buttonGetStarted"
             android:layout_width="150sp"
             android:layout_height="wrap_content"

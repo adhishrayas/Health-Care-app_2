@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import com.example.healthcare.R
 import com.example.healthcare.databinding.FragmentWelcomeBinding
 
 class WelcomeFragment : Fragment() {
@@ -26,11 +27,8 @@ class WelcomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-//        binding.button.setOnClickListener {
-//            findNavController().navigate(R.id.action_welcomeFragment_to_signUpFragment)
-//        }
-
-
+        binding.buttonGetStarted.setOnClickListener {
+            findNavController().navigate(R.id.action_welcomeFragment_to_signUpFragment)
+        }
     }
-
 }
