@@ -7,6 +7,8 @@ android {
     namespace 'com.example.healthcare'
     compileSdk 33
 
+    compileSdkVersion 33
+
     defaultConfig {
         applicationId "com.example.healthcare"
         minSdk 24
@@ -47,6 +49,11 @@ dependencies {
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.0'
     implementation 'androidx.navigation:navigation-fragment-ktx:2.5.3'
     implementation 'androidx.navigation:navigation-ui-ktx:2.5.3'
+
+
+//    compile 'com.android.support:appcompat-v7:23.3.0'
+//    compile 'com.google.android.gms:play-services-location:8.4.0'
+//    compile 'com.google.android.gms:play-services-maps:8.4.0'
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
