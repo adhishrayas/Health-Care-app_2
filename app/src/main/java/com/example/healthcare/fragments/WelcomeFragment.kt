@@ -27,8 +27,10 @@ class WelcomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.buttonGetStarted.setOnClickListener {
-            findNavController().navigate(R.id.action_welcomeFragment_to_signUpFragment)
-        }
+       binding.button.setOnClickListener {
+           findNavController().navigate(R.id.action_welcomeFragment_to_signUpFragment)
+       }
+
+
     }
 }
