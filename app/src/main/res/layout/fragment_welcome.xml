@@ -45,7 +45,6 @@
             android:background="@drawable/button"
             />
 
-
     </LinearLayout>
 
 </LinearLayout>
