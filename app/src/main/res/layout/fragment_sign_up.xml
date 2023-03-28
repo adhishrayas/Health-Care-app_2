@@ -34,6 +34,7 @@
             />
 
         <EditText
+            android:id="@+id/name"
             android:layout_width="match_parent"
             android:layout_height="35sp"
             android:hint="Jan Kowalski"
@@ -53,6 +54,7 @@
             />
 
         <EditText
+            android:id="@+id/email"
             android:layout_width="match_parent"
             android:layout_height="35sp"
             android:hint="patient@self.com"
@@ -71,7 +73,8 @@
             android:layout_marginTop="20dp"
             />
 
-        <EditText
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/pass"
             android:layout_width="match_parent"
             android:layout_height="35sp"
             android:hint="min 8 char"
@@ -79,7 +82,8 @@
             android:textColor="@color/grey"
             android:padding="8dp"
             android:layout_marginTop="8dp"
-            android:background="@drawable/signup_button"/>
+            android:background="@drawable/signup_button"
+            />
 
         <CheckBox
             android:layout_width="wrap_content"
@@ -126,7 +130,6 @@
                 android:layout_marginLeft="10sp"/>
 
         </LinearLayout>
-
 
     </LinearLayout>
 
