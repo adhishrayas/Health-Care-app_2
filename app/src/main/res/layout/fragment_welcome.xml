@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:id="@+id/welcomeFragment"
     android:layout_height="match_parent"
     tools:context=".fragments.WelcomeFragment">
 
@@ -27,7 +28,7 @@
             android:layout_below="@+id/imageView"
             android:layout_marginTop="16dp"
             android:gravity="center_horizontal"
-            android:textSize="22sp"
+            android:textSize="20sp"
             android:text="Manage your health and bright future"
             android:textStyle="bold"
             android:textColor="@color/black"
@@ -39,6 +40,7 @@
             android:layout_height="wrap_content"
             android:text="Get Started"
             android:textStyle="bold"
+            android:textColor="@color/white"
             android:textSize="18sp"
             android:textAllCaps="false"
             android:layout_marginTop="16dp"

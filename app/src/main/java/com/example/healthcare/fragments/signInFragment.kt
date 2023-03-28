@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.example.healthcare.R
 import com.example.healthcare.databinding.FragmentSignInBinding
+import com.example.healthcare.databinding.FragmentWelcomeBinding
 
 
 class signInFragment : Fragment() {
@@ -19,7 +20,9 @@ class signInFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_sign_in, container, false)
+        _binding = FragmentSignInBinding.inflate(layoutInflater,container,false)
+
+        return binding.root
     }
 
 // write here
@@ -29,7 +32,6 @@ class signInFragment : Fragment() {
 
         binding.signInButton.setOnClickListener {
             findNavController().navigate(R.id.action_signInFragment_to_infoFragment)
-
         }
 
         binding.signUpRedirect.setOnClickListener {

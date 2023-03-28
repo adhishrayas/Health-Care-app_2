@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.example.healthcare.R
 import com.example.healthcare.databinding.FragmentInfoBinding
+import com.example.healthcare.databinding.FragmentWelcomeBinding
 
 
 class infoFragment : Fragment() {
@@ -20,7 +21,9 @@ class infoFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_info, container, false)
+        _binding = FragmentInfoBinding.inflate(layoutInflater,container,false)
+
+        return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
