@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.example.healthcare.R
 import com.example.healthcare.databinding.FragmentSignInBinding
-import com.example.healthcare.databinding.FragmentWelcomeBinding
+
 
 
 class signInFragment : Fragment() {

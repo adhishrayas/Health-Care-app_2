@@ -4,8 +4,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import com.example.healthcare.databinding.ActivityMainBinding
-import com.example.healthcare.fragments.SignUpFragment
-import com.example.healthcare.fragments.WelcomeFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {

@@ -11,8 +11,6 @@ import androidx.navigation.fragment.findNavController
 import com.example.healthcare.MainActivity.Companion.bottomNav
 import com.example.healthcare.R
 import com.example.healthcare.databinding.FragmentSignUpBinding
-import com.example.healthcare.databinding.FragmentWelcomeBinding
-import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
