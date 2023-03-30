@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.example.healthcare.R
 import com.example.healthcare.databinding.FragmentAddBinding
-import com.example.healthcare.databinding.FragmentWelcomeBinding
+
 
 
 class addFragment : Fragment() {

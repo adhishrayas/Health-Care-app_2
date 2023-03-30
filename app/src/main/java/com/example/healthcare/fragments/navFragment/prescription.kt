@@ -7,12 +7,18 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.healthcare.R
 
-
+// TODO: Rename parameter arguments, choose names that match
+// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
 
-
-class calenderFragment : Fragment() {
+/**
+ * A simple [Fragment] subclass.
+ * Use the [prescription.newInstance] factory method to
+ * create an instance of this fragment.
+ */
+class prescription : Fragment() {
+    // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
 
@@ -28,7 +34,8 @@ class calenderFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_calender, container, false)
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_perscription, container, false)
     }
 
     companion object {
@@ -38,12 +45,12 @@ class calenderFragment : Fragment() {
          *
          * @param param1 Parameter 1.
          * @param param2 Parameter 2.
-         * @return A new instance of fragment calenderFragment.
+         * @return A new instance of fragment prescription.
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            calenderFragment().apply {
+            prescription().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)

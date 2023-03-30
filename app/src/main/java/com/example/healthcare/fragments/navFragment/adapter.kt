@@ -6,11 +6,11 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.healthcare.databinding.ListItemsBinding
 
 class adapter(private val doctorlist: ArrayList<Doctors>) : RecyclerView.Adapter<adapter.MyViewHolder>(){
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): adapter.MyViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         val binding = ListItemsBinding.inflate(LayoutInflater.from(parent.context),parent,false)
         return MyViewHolder(binding)
     }
-    override fun onBindViewHolder(holder: adapter.MyViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         val Doctor :Doctors = doctorlist[position]
         holder.bind(Doctor)
     }
@@ -19,10 +19,9 @@ class adapter(private val doctorlist: ArrayList<Doctors>) : RecyclerView.Adapter
         return doctorlist.size
     }
 
-    public class MyViewHolder(private val itemsBinding: ListItemsBinding):RecyclerView.ViewHolder(itemsBinding.root){
+    class MyViewHolder(private val itemsBinding: ListItemsBinding):RecyclerView.ViewHolder(itemsBinding.root){
         fun bind(Doctor:Doctors){
-            itemsBinding.Doctorname.text = Doctor.Doctor_name
-            itemsBinding.DoctorExperience.text = Doctor.Doctor_Experience
+            itemsBinding.DoctorName.text = Doctor.Doctor_name
             itemsBinding.DoctorSpecialization.text = Doctor.Doctor_specialization
         }
     }

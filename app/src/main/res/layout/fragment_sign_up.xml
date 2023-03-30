@@ -11,25 +11,26 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp">
+        android:layout_marginRight="30dp"
+        tools:ignore="UselessParent">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Sign Up"
-            android:layout_marginTop="80dp"
+            android:layout_marginTop="70dp"
             android:layout_marginLeft="100dp"
             android:textColor="@color/black"
             android:textSize="40sp"
             android:textStyle="bold"
-            android:fontFamily="@font/poppins_regular"/>
+            android:fontFamily="@font/gilroy_light"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Full Name"
             android:textSize="20sp"
-            android:textColor="@color/grey"
+            android:textColor="@color/button"
             android:layout_marginTop="30dp"
             />
 
@@ -49,7 +50,7 @@
             android:layout_height="wrap_content"
             android:text="Email"
             android:textSize="20sp"
-            android:textColor="@color/grey"
+            android:textColor="@color/button"
             android:layout_marginTop="20dp"
             />
 
@@ -69,7 +70,7 @@
             android:layout_height="wrap_content"
             android:text="Password"
             android:textSize="20sp"
-            android:textColor="@color/grey"
+            android:textColor="@color/button"
             android:layout_marginTop="20dp"
             />
 
@@ -92,6 +93,15 @@
             android:textColor="@color/grey"
             android:textSize="15sp"
             android:layout_marginTop="8dp"/>
+
+        <Button
+            android:id = "@+id/googlesignup"
+            android:layout_width="wrap_content"
+            android:text="Use your google account"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:backgroundTint="@color/white"
+            android:layout_height="wrap_content"/>
 
         <Button
             android:id="@+id/signUpButton"

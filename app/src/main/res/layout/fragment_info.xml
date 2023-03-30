@@ -9,77 +9,108 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
         android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp">
+        android:layout_marginRight="30dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Back"
+            android:layout_marginRight="130dp"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:textSize="15sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/gilroy_light"
             android:text="A little about yourself"
-            android:layout_marginTop="80dp"
-            android:layout_marginLeft="13dp"
             android:textColor="@color/black"
             android:textSize="30sp"
-            android:textStyle="bold"
-            android:fontFamily="@font/gilroy_light"/>
+            android:textStyle="bold" />
 
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
             android:text="Let's get acquainted"
-            android:textSize="15sp"
-            android:layout_marginLeft="90dp"
             android:textColor="@color/grey"
-            android:layout_marginTop="10dp"
-            />
+            android:textSize="15sp" />
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Your Gender"
+            android:text="Your Name"
+            android:textColor="@color/button"
             android:textSize="20sp"
+            android:layout_marginTop="30dp"
             android:textStyle="bold"
-            android:textColor="@color/black"
-            android:layout_marginTop="38dp"
-            android:fontFamily="@font/poppins_semibold"/>
+            android:fontFamily="@font/poppins_regular"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/signup_button">
+
+            <EditText
+                android:id="@+id/Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/signup_button"
+                android:fontFamily="@font/gilroy_light"
+                android:padding="8dp"
+                android:hint="Name"
+                android:textSize="20dp" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:text="Your Gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/button"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_regular"/>
+
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
             android:orientation="horizontal">
 
 
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@color/button"
-                android:layout_marginTop="20dp">
+                android:layout_marginTop="10dp"
+                android:background="@color/button">
 
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:gravity="center">
+                    android:gravity="center"
+                    android:orientation="horizontal">
 
-                    <CheckBox
-                        android:background="@drawable/signup_button"
-                        android:layout_width="160dp"
-                        android:layout_height="70sp"
-                        android:text="Male"
-                        android:padding="10dp"
-                        android:layout_marginRight="24dp"
-                        android:textSize="25sp"/>
-
-                    <CheckBox
-                        android:background="@drawable/signup_button"
-                        android:layout_width="160dp"
-                        android:layout_height="70sp"
-                        android:text="Female"
-                        android:padding="10dp"
-                        android:textSize="25sp"/>
+                    <Spinner
+                        android:id="@+id/spinner"
+                        android:layout_width="353dp"
+                        android:layout_height="40dp"
+                        android:scrollbarSize="30dp"
+                        android:background="@drawable/signup_button" />
                 </LinearLayout>
 
             </com.google.android.material.card.MaterialCardView>
@@ -87,142 +118,99 @@
         </LinearLayout>
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Your Birthday"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:textColor="@color/black"
-            android:layout_marginTop="10dp"
-            android:fontFamily="@font/poppins_semibold"/>
-
-        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:gravity="center"
-                android:padding="10dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Date:"
-                    android:textStyle="bold"
-                    android:textColor="@color/black"
-                    android:textSize="22sp"/>
-
-                <EditText
-                    android:background="@drawable/outline_box"
-                    android:layout_width="70dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:text="23"
-                    android:padding="10dp"
-                    />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:gravity="center"
-                android:padding="10dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Month:"
-                    android:textStyle="bold"
-                    android:textColor="@color/black"
-                    android:textSize="22sp"/>
-
-                <EditText
-                    android:background="@drawable/outline_box"
-                    android:layout_width="70dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:text="10"
-                    android:padding="10dp"
-                    />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:gravity="center"
-                android:padding="10dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Year:"
-                    android:textStyle="bold"
-                    android:textColor="@color/black"
-                    android:textSize="22sp"/>
-
-                <EditText
-                    android:background="@drawable/outline_box"
-                    android:layout_width="70dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:text="2003"
-                    android:padding="10dp"
-                    />
-
-
-            </LinearLayout>
-
-        </LinearLayout>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Your Location"
+            android:text="Your Age"
+            android:textColor="@color/button"
             android:textSize="20sp"
+            android:layout_marginTop="5dp"
             android:textStyle="bold"
-            android:textColor="@color/black"
-            android:layout_marginTop="10dp"
-            android:fontFamily="@font/poppins_semibold"/>
+            android:fontFamily="@font/poppins_regular"/>
 
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/signup_button"
-            android:layout_marginTop="3dp">
+            android:background="@drawable/signup_button">
 
-            <TextView
+            <EditText
+                android:id="@+id/Age"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Hamirpur"
                 android:background="@drawable/signup_button"
-                android:padding="15dp"
-                android:textColor="@color/black"
-                android:textStyle="bold"
-                android:textSize="20dp"
-                android:fontFamily="@font/gilroy_light"/>
+                android:fontFamily="@font/gilroy_light"
+                android:padding="8dp"
+                android:hint="21"
+                android:textSize="20dp" />
 
         </com.google.android.material.card.MaterialCardView>
 
-        <Button
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Ailments"
+            android:textColor="@color/button"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_regular"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/signup_button">
+
+            <EditText
+                android:id="@+id/Ailments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/signup_button"
+                android:fontFamily="@font/gilroy_light"
+                android:padding="8dp"
+                android:hint="Fever"
+                android:textSize="20dp" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Phone"
+            android:textColor="@color/button"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_regular"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/signup_button">
+
+            <EditText
+                android:id="@+id/phoneno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/signup_button"
+                android:fontFamily="@font/gilroy_light"
+                android:padding="8dp"
+                android:hint="**********"
+                android:textSize="30dp" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/continueButton"
             android:layout_width="180dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="70dp"
-            android:text="Continue"
-            android:textAllCaps="false"
-            android:textSize="18sp"
             android:layout_marginTop="65dp"
             android:background="@drawable/button"
-            android:fontFamily="@font/gilroyextrabold"/>
+            android:fontFamily="@font/poppins_medium"
+            android:text="Continue"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:textSize="20sp" />
 
 
     </LinearLayout>

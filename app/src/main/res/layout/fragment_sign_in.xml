@@ -17,23 +17,24 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Sign In"
-            android:layout_marginTop="80dp"
+            android:layout_marginTop="70dp"
             android:layout_marginLeft="100dp"
             android:textColor="@color/black"
             android:textSize="40sp"
             android:textStyle="bold"
-            android:fontFamily="@font/poppins_regular"/>
+            android:fontFamily="@font/gilroy_light"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Email"
             android:textSize="20sp"
-            android:textColor="@color/grey"
+            android:textColor="@color/button"
             android:layout_marginTop="30dp"
             />
 
         <EditText
+            android:id = "@+id/email"
             android:layout_width="match_parent"
             android:layout_height="35sp"
             android:hint="patient@self.com"
@@ -44,11 +45,12 @@
             android:background="@drawable/signup_button"/>
 
         <TextView
+            android:id = "@+id/pass"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Password"
             android:textSize="20sp"
-            android:textColor="@color/grey"
+            android:textColor="@color/button"
             android:layout_marginTop="20dp"
             />
 

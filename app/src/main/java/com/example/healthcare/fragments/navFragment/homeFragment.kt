@@ -6,6 +6,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.NavController
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.healthcare.MainActivity
@@ -29,10 +31,9 @@ class homeFragment : Fragment(R.layout.fragment_home) {
     override fun onCreateView(
         inflater: LayoutInflater, @Nullable container: ViewGroup?,
         @Nullable savedInstanceState: Bundle?
-    ):View?{
-        _binding = FragmentHomeBinding.inflate(inflater,container,false)
-        val view = binding.root
-        return  view
+    ): View {
+        _binding = FragmentHomeBinding.inflate(inflater, container, false)
+        return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -46,9 +47,10 @@ class homeFragment : Fragment(R.layout.fragment_home) {
         myAdapter = adapter(DoctorArrayList)
         recyclerView.adapter = myAdapter
         MainActivity.bottomNav?.visibility = View.VISIBLE
-        //view.addRedirect.setOnClickListener {
-       //     findNavController().navigate(R.id.action_homeFragment_to_addFragment)
-      //  }
+
+        binding.medic.setOnClickListener{
+            findNavController().navigate(R.id.action_homeFragment_to_prescription)
+        }
     }
 
     private fun dataInitialize(){
@@ -58,7 +60,7 @@ class homeFragment : Fragment(R.layout.fragment_home) {
             .get()
             .addOnSuccessListener { result ->
                 for(document in result){
-                    var d = Doctors(Doctor_Experience = document.data["Doctor_Experience"].toString(), Doctor_name = document.data["Doctor_name"].toString(), Doctor_specialization = document.data["Doctor_specialization"].toString())
+                    val d = Doctors(Doctor_Experience = document.data["Doctor_Experience"].toString(), Doctor_name = document.data["Doctor_name"].toString(), Doctor_specialization = document.data["Doctor_specialization"].toString())
                     DoctorArrayList.add(d)
                 }
             }

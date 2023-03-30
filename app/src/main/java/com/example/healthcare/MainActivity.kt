@@ -19,9 +19,6 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         bottomNav = binding.bottomNavigationView
-//        val signUpFragment = SignUpFragment()
-//        val welcomeFragment = WelcomeFragment()
-
 
     }
 
